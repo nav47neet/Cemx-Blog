@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id"
+    content="66126502573-643a8d4f07l3g80nh49psihmo6740l7t.apps.googleusercontent.com">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Timesnext</title>
+
+  <!-- Bootstrap -->
+
+  <link href="https://www.cemx.in/front/img/fav.png" rel="icon" type="icon/image">
+  <!-- <link href="https://www.cemx.in/front/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://www.cemx.in/front/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="https://www.cemx.in/front/css/slick.css" rel="stylesheet">
+
+  <link href="https://www.cemx.in/front/css/hamburgers.css" rel="stylesheet">
+
+  <link href="https://www.cemx.in/front/css/slick-theme.css" rel="stylesheet">
+
+  <link href="https://www.cemx.in/front/css/style.css" rel="stylesheet">
+
+  <link href="https://www.cemx.in/front/css/media.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.css" rel="stylesheet" />
+  <!---Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Glegoo&display=swap" rel="stylesheet">
+  <!---Font-Awesome CDN-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--Internal Stylesheet-->
+
+  <style>
+    < !---- Subscribe Form CSS---->form {
+      border: 3px solid #f1f1f1;
+      font-family: Arial;
+    }
+
+    .subscribe {
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    input[type=text],
+    input[type=submit] {
+      width: 25%;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type=checkbox] {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+
+    input[type=submit] {
+      background-color: #841f27;
+      color: #f1f1f1;
+      border: none;
+      margin-left: 2rem;
+
+    }
+
+    input[type=submit]:hover {
+      opacity: 0.8;
+    }
+
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+
+    }
+
+
+
+
+
+
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+
+
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+      margin-bottom: 16px;
+      padding: 0 12px;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+
+
+    .cardmain {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+
+    }
+
+    
+
+    < !- Subscribe Form CSS---->form {
+      border: 3px solid #f1f1f1;
+      font-family: Arial;
+    }
+
+    .subscribe {
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    input[type=text],
+    input[type=submit] {
+      width: 25%;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type=checkbox] {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+
+    input[type=submit] {
+      background-color: #841f27;
+      color: white;
+      border: none;
+      margin-left: 2rem;
+
+    }
+
+    input[type=submit]:hover {
+      opacity: 0.8;
+    }
+
+
+    .btn {
+      background-color: #841f27;
+      color: #fff;
+    }
+
+    .btn:hover {
+      background-color: #841f27;
+      color: #fff;
+    }
+
+    h1 {
+      font-family: 'Roboto Slab', serif;
+      color: #841f27;
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      text-align: center;
+      padding-top: 1rem;
+
+    }
+
+    .nav-item {
+      background: none;
+      color: inherit;
+      border: #f7f7f7;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .navbar-toggler {
+      background-color: #f7f7f7;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: 'Roboto Slab', Serif;
+      padding-top: 1rem;
+      color: #464646;
+    }
+
+    .link {
+      font-family: 'Roboto Slab', serif;
+      color: #841f27;
+      font-size: 16px;
+      font-weight: 100;
+    }
+
+    .link-p {
+      font-weight: 900;
+      font-size: 18px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg static-top navbar-light" style="background-color: #f7f7f7;">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.cemx.in/">
+        <img src="https://www.cemx.in/front/img/logo.png" alt="" height="70px" width="150px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" type="button" style="padding: 0.2cm;">
+            <a class="nav-link text-light btn r" href="./index1.html">Blog
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item" type="button" style="padding: 0.2cm;">
+            <a class="nav-link text-light btn " href="#AboutUs">About Us</a>
+          </li>
+          <li class="nav-item" type="button" style="padding: 0.2cm;">
+
+            <a class="nav-link text-light btn r" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="col-lg-6 col-x-12 shadow" style="display: block;margin:1rem auto">
+    <h1>Timesnext</h1>
+    <h2>How collegemates Ashutosh Kumar & Sourav Chakraborty are transforming the cement industry</h2>
+    <p>This unique startup is India's first online platform with offline extension stores where a customer
+      can buy cement of different brands available in the Indian market at the best competitive price.</p>
+    <p>&nbsp;</p>
+    <figure>
+      <img src="https://mk0timesnextw7n7qiu0.kinstacdn.com/wp-content/uploads/2019/11/Ashutosh-Kumar-696x696.jpg" alt=""
+        style="width: 100%;">
+      <figcaption style="color: #606060;font-size: 12px;">cemX is India's first online platform with offline
+        extension
+        stores where a customer can buy cement of different brands at the best competitive price.
+      </figcaption>
+    </figure>
+    <p>
+      The ecommerce revolution in India was kickstarted by Rediff back in the early 2000s that started its
+      operations with knick-knacks. Today, we have an established online marketplace holding several items
+      ranging from small food items to automobiles.
+    </p>
+    <p>
+      The cement industry in India alone has an 8% share in the world market. Despite having a robust
+      offline foundation, the industry is still taking its initial steps into entering the online business.
+    </p>
+    <p>
+      Ashutosh Kumar (Jha), the founder & CEO at cemX observed the functioning of the cement sector &
+      noticed a few things about the operation of the industry. He saw that several concerns like retail
+      shops not providing wide brand variety, the hassle of visiting multiple stores in finding the best
+      deal, retailers with credit facilities facing troubles in recovery often leading to lengthy legal
+      consequences many times, high retail sale price per cement bag & consolidated industry with a very
+      solid entry barrier for new entrants without a enormous capital investment.
+    </p>
+    <h2>Creating a hassle-free & bargain-free online platform</h2>
+    <figure>
+      <img src="https://mk0timesnextw7n7qiu0.kinstacdn.com/wp-content/uploads/2019/11/Team-cemX-1.jpg" alt=""
+        style="width: 90%;padding-top: 1rem;margin: 0 auto;display: block;">
+      <figcaption style="color: #606060;font-size: 15px;margin-left: 2rem;"><em>
+          Ashutosh Kumar (Left) &amp; Sourav Chakraborty
+          (Right)</em></figcaption>
+    </figure>
+    <p>Comprehending the entire situation, Kumar decided to develop an integrated platform cemX with stores
+      online and offline, while being a part of the online market switching consumer revolution, bringing
+      one solution to multiple problems. </p>
+    <p>Hailing from Sitamarhi Bihar, Ashutosh Kumar, CEO at cemX, said,</p>
+    <blockquote>
+      <span data-preserver-spaces="true"
+        style="font-weight: 900;font-family: 'Montserrat', sans-serif;font-size: 20px;"><i>“We are
+          contributing our best to support the digital India
+          initiative by making cement deals hassle-free and easily available on the door at the best
+          competitive price.”</i></span>
+    </blockquote>
+    <p>
+      The unique early-stage startup is India’s first online platform with offline extension stores where a
+      customer can buy cement of different brands available in the Indian market at the best competitive
+      price. Customers can order directly through cemX’s online platform or can even visit the nearest
+      e-store where the e-dealers are available for assistance. The startup currently majorly operates in
+      Bihar and very soon kicking off the pilot in Bangalore, Mumbai, etc. & provides various PPC cement
+      brands like Ambuja, ACC, Jaypee, etc.
+    </p>
+    <p>Almost a month later after official Launch, Ashutosh was scheduled to meet his senior,
+      Sourav Chakraborty, from grad school in Kolkata to discuss a research paper. Sourav
+      was now in town post completion of his second masters, MSc in Business Management
+      from Imperial College London. Ashutosh shared his startup Idea and welcomed him on
+      board as a co-Founder & CBO</p>
+    <p>
+      Sourav Chakraborty, co-founder & CBO at cemX & an Imperial College graduate, believes that the
+      modern-day businesses exist on their groundbreaking potential. He added,
+    </p>
+    <blockquote>
+      <span data-preserver-spaces="true"
+        style="font-weight: 900;font-family: 'Montserrat', sans-serif;font-size: 20px;"><i>“We at cemX want
+          to break the age-old orthodox walls of the Indian cement Industry only to build newer houses for
+          the New Smart India.”</i></span>
+    </blockquote>
+    <h2>Challenges faced & company’s vision</h2>
+    <p>Initially, the online cement firm faced challenges in credit-based purchases & developing the trust
+      with the end customers in an orthodox setup of the present industry. The firm’s operations have been
+      bootstrapped by both Kumar & Chakraborty and have been approached by several investors for funding &
+      strategic partnerships. </p>
+    <blockquote>
+      <span data-preserver-spaces="true"
+        style="font-weight: 900;font-family: 'Montserrat', sans-serif;font-size: 20px;"><i>“We are currently
+          in a very early stage of negotiations with them,”</i></span>
+      <p>says Kumar.</p>
+      <p>The duo considers the very idea of transforming the conservative cement industry & shifting to a
+        digital e-commerce domain while breaking the barriers of building material e-commerce &
+        credit-based purchasing as their very first milestone. The cement startup, currently in its
+        revenue generation phase, visions to bring the entire Cement Industry into the digital domain by
+        molding it into being a wholly hassle-free & bargain free sector. </p>
+      <a href="https://timesnext.com/ashutosh-kumar-sourav-chakraborty-transforming-cement-industry/">
+        <p style="font-family: 'Roboto Slab', serif;text-align: center;color: #841f27;font-size: 25px;">
+          https://timesnext.com/ashutosh-kumar-sourav-chakraborty-transforming-cement-industry/</p>
+      </a>
+      <p>&nbsp;</p>
+  </div>
+  <div class="col-lg-6 col-xs-12" style="display: block;margin: auto;">
+    <a href="./feedback.html">
+      <button type="button" class="btn" style="font-family: 'Montserrat', sans-serif;">Feedback</button>
+    </a>
+  </div>
+  </div>
+  <a name="AboutUs">
+    <section class="about boxs" style="margin-top: 1rem;">
+      <!-- <img src="https://www.cemx.in/front/img/about.png" class="img-fluid" alt="image"> -->
+      <div class="container">
+        <div class="about_sec boxs">
+          <h2 class="mb-2">About Us</h2>
+          <p>cemX is India&#39;s first online platform where a customer can buy cement of different brands
+            available in the Indian market at the best competitive price. It is an e-commerce aggregator
+            platform that efficiently redesigned the structure
+            of an orthodox cement distribution channel in India thereby democratizing the purchasing power of
+            the consumers namely the middle and lower class segments of Indian society. Registered and certified
+            by Startup India, cemX empowers
+            the Government of India&rsquo;s &lsquo;Digital India&rsquo; initiative.&nbsp;Anybody (small
+            businesses or individuals) can order directly through our online platform or can visit the nearest
+            e-dealers (our offline e-stores) for assistance.</p>
+
+          <p>&nbsp;</p>
+
+          <p style="color: rgb(170, 170, 170); font-style: italic;"><small>* All the pictures&nbsp;and
+              logos&nbsp;shown&nbsp;are for&nbsp;illustration&nbsp;purpose&nbsp;only, we don&#39;t have a
+              tie-up with any specific brand.</small></p>
+        </div>
+      </div>
+    </section>
+  </a>
+  <form action="" method="POST">
+    <div class="container">
+      <p>&nbsp;</p>
+      <h2>Subscribe to our Newsletter</h2>
+
+    </div>
+
+    <div class="container subscribe" style="background-color:white;">
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Email address" name="mail" required>
+      <label>
+        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+      </label>
+      <input type="submit" value="Subscribe">
+    </div>
+
+
+  </form>
+
+  <a name="contact">
+    <section class="contact boxs">
+
+      <div class="container">
+        <div class="contact_inner boxs">
+          <div class="row nomargin">
+            <div class="col-md-3">
+              <div class="contact_left boxs">
+                <p>Contact Us</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="contact_middle boxs">
+
+                <a href="tel:+919304084961">
+                  <p>(+91)9304084961</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="contact_right boxs">
+
+                <a href="mailto:roy.gray@mail.com">
+                  <p>help@cemx.in</p>
+                </a>
+              </div>
+            </div>
+  </a>
+  <div class="col-md-3">
+    <div class="contact_right12fa boxs">
+      <a href="https://www.facebook.com/cemxgroup" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/hexfordventures" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/cemx5" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/company/cemx" target="_blank"><i class="fa fa-linkedin"
+          aria-hidden="true"></i></a>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <section class="footer boxs">
+    <div class="container">
+      <div class="row nomargin">
+        <div class="col-md-4 nopadding">
+          <div class="india_cm boxs">
+            <a href="https://www.cemx.in/"><img src="https://www.cemx.in/front/img/logo.png" class="img-fluid"
+                alt="cemx"></a>
+            <p>cemX is India’s first online platform<br> with offline extension stores where<br> a customer
+              can buy cement of<br> different brands available at the<br> cheapest price. </p>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-md-3 nopadding">
+          <div class="Popular boxs quick">
+            <ul>
+              <li><b> Quick Links</b></li>
+              <li><a href="https://www.cemx.in/about">About Us</a></li>
+              <li><a href="https://www.cemx.in/contact_us">Contact Us</a></li>
+
+              <li><a href="https://www.cemx.in/faq">FAQ</a></li>
+              <li><a href="https://www.cemx.in/edealder-register">Become E-Dealer</a></li>
+
+              <li><a href="https://www.cemx.in/location">Store Location</a></li>
+              <li><a href="https://www.cemx.in/career">Careers</a></li>
+              <li><a href="https://www.cemx.in/businessWithus">Business with Us</a></li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 nopadding">
+
+          <div class="Popular boxs service">
+            <ul>
+              <li><b>Our Services</b></li>
+              <li><a href="https://www.cemx.in/return_policy">Return & Refund Policy</a></li>
+              <li><a href="https://www.cemx.in/privacy">Privacy Policy</a></li>
+
+              <li><a href="https://www.cemx.in/store_policy">Store Policy</a></li>
+              <li><a href="https://www.cemx.in/terms">Terms & Conditions</a></li>
+              <li><a href="https://www.cemx.in/payment_method">Payments Methods</a></li>
+              <li><a href="https://www.cemx.in/press">Press release</a></li>
+              <li>
+                <a href="https://www.blog.cemx.in">Blog</a>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <section class="footerbtm  boxs">
+    <div class="container-fluid">
+      <div class="btmleft d-inline-block ">
+        <p><span><i class="fa fa-copyright" aria-hidden="true"></i></span> Hexford Ventures Pvt. Ltd.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://www.cemx.in/front/js/jquery.js"></script>
+
+  <script src="https://www.cemx.in/front/js/bootstrap.min.js"></script>
+
+  <script src="https://www.cemx.in/front/js/slick.js"></script>
+
+  <script src="https://www.cemx.in/front/js/custom.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.js"></script>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="https://www.cemx.in/front/js/event.js"></script>
+  <script>
+    if ($("#popup_distance_excced").val()) {
+      swal({
+        title: "Currently you are not in " + $("#popup_distance_excced").val() +
+          " city. So you can not place the order, but you can fill the enquiry form.",
+        icon: "warning",
+        closeOnClickOutside: false,
+        dangerMode: true,
+      });
+    }
+  </script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <script>
+    function onSignIn(googleUser) {
+      var url = $(".g-signin2").data('url');
+      // Useful data for your client-side scripts:
+      var profile = googleUser.getBasicProfile();
+      var name = profile.getName();
+      var email = profile.getEmail();
+      $.post(url, {
+        name: name,
+        email: email
+      }, function (res) {
+        // location.reload(); 
+        if (res.result === 1) {
+          window.location.href = "https://www.cemx.in/";
+        }
+      })
+    }
+
+    function signOut() {
+      var auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function () {
+        console.log('User signed out.');
+      });
+    }
+
+    function onLoad() {
+      gapi.load('auth2', function () {
+        gapi.auth2.init();
+      });
+    }
+
+    $(document).on('click', '.logout a', function (evt) {
+      evt.preventDefault();
+      var url = $(this).attr("href");
+      $.post(url, function (res) {
+        if (res.result === 1) {
+          var auth2 = gapi.auth2.getAuthInstance();
+          if (auth2.signOut()) {
+            window.location.href = "https://www.cemx.in/";
+          } else {
+            window.location.href = "https://www.cemx.in/";
+          }
+        }
+      })
+
+    });
+  </script>
+  <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+</body>
